@@ -10,11 +10,11 @@ Required jQuery before calling elimore.
 
 1. Include jquery.elimore.js in your project files
 2. Call the elimore
-###Default options
+### Default options
 ```
 $(element).elimore();
 ```
-###Show Text Only Without Hidden Button.
+### Show Text Only Without Hidden Button.
 ```
 $(element).elimore({showOnly:true})
 ```
