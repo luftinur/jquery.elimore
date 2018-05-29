@@ -1,4 +1,5 @@
 # Jquery Elimore
+#### Make Easy For Ellipsis Text
 
 Elimore is jQuery that help you to make ellipsis text for multiple line of text with view or more button. You can trim how long the character will show.
 
