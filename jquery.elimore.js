@@ -74,8 +74,12 @@ if (typeof Object.create !== 'function') {
                 }
 
                 self.$el.html("");
-
-                self.$el.append(text_one + '<span class="elimore_trim" style="display:none">' + text_two + '</span>' + more_btn + less_btn);
+				if(self.options.trimOnly){
+					 self.$el.append(text_one);
+				}else{
+					 self.$el.append(text_one + '<span class="elimore_trim" style="display:none">' + text_two + '</span>' + more_btn + less_btn);
+				}
+               
 
                 self._toggle_ellipsis();
 
@@ -113,7 +117,8 @@ if (typeof Object.create !== 'function') {
         moreText: "More View",
         lessText: "Less View",
         showOnly: false,
-        dataUrl: false
+        dataUrl: false,
+		trimOnly : false
     };
 
 
